@@ -10,11 +10,9 @@ file_path_sections= dir_path +"\\test_1_hull_sections.igs"
 file_path_sim= dir_path +"\\test_1_simetry_line.igs"
 #file_path= dir_path +"\\paluba.igs"
 #create new IGES reader class
-reader = IGESControl_Reader()
-reader1 = IGESControl_Reader()
-reader_sur = IGESControl_Reader()
+reader_sections = IGESControl_Reader()
+reader_sim = IGESControl_Reader()
 #read file, make sure you update path. Note in Windows slash needs to be used
-reader_sur.ReadFile(file_path_sur)
 reader_sections.ReadFile(file_path_sections)
 reader_sim.ReadFile(file_path_sim)
 #no idea what this does but without it the shape won't be created :)

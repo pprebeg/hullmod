@@ -4,9 +4,7 @@ Ship hull form transformation
 1. Install pythonocc using conda
 https://github.com/tpaviot/pythonocc-core
 
-conda create --name=env_hullmod python=3.9
-source activate env_hullmod
-conda install -c conda-forge pythonocc-core=7.6.2
+conda create -n env_conda_hullmod python=3.9 pythonocc-core=7.6.2 pyside2 -c conda-forge 
 
 2. import iges files with section curves
 
